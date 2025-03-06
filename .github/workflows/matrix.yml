@@ -10,9 +10,9 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
     steps:
       - name: get code
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: install nodeJS
-        uses: action/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.nade-version }}
       - name: install dependancies
