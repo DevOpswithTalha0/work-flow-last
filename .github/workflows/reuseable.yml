@@ -14,7 +14,7 @@ jobs:
       - name: get code
         uses: actions/download-artifact@v4
         with:
-          name: ${{ input.artifact-name }}
+          name: ${{ inputs.artifact-name }}
       - name: list file
         run: ls
       - name: output information
